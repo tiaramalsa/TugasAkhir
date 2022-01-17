@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up IDX Learning</title>
+    <link rel="stylesheet" href="css/stylesignup.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-96x96.png">
+    <style>
+        p{text-indent: 30px; text-align: justify;}
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="wrapper">
+            <div class="logo"><a href=''>IDX Learning</a></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="golearn.html">Go Learn</a></li>
+                    <li><a href="index_saham_idx.html">Indeks Saham IDX</a></li>
+                    <li><a href="daftarsekuritas.html">Daftar Sekuritas</a></li>
+                    <li><a href="signup.html" class="tbl-biru" >Sign Up</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br><br>
+    <div class="box">
+        <form action="signup.html" class="signup-form">
+            <h1>Sign up</h1>
+    
+            <div class="txt">
+                <input type="text">
+                <span data-placeholder="Nama"></span>
+            </div>
+            <div class="txt">
+                <input type="email">
+                <span data-placeholder="E-mail"></span>
+            </div>
+            <div class="txt">
+                <input type="password">
+                <span data-placeholder="Password"></span>
+            </div>
+            <div class="txt">
+                <input type="number">
+                <span data-placeholder="No.Telpon"></span>
+            </div>
+    
+            <input type="submit" class="signupbtn" value="Sign up">
+            <div class="bottom_text">
+                Sudah punya akun? <a href="login.html"><b>Log in</b></a>
+            </div>
+        </form>
+
+        <script>
+            $(".txt input").on("focus", function(){
+                $(this).addClass("focus");
+            });
+            $(".txt input").on("blur", function(){
+                if ($(this).val() == "")
+                    $(this).removeClass("focus");
+            });
+        </script>
+    </div>
+    <div id="copyright">
+        <div class="wrapper">
+            Copyright&copy;2022 <b>Tiara Malsa</b>
+    </div>
+</body>
+</html>
